@@ -7,6 +7,11 @@ class Song
     @name = name
     self.artist=artist if artist
     self.genre=genre if genre
+
+    if artist != nil
+      self.artist = artist
+      artist.addsong(self)
+    end
   end
 
   def self.all
