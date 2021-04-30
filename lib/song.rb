@@ -40,7 +40,6 @@ class Song
     if !(genre.songs.include?(self))
       genre.songs << self
       # Genre.all.push(genre)
-    # binding.pry
     end
   end
 
