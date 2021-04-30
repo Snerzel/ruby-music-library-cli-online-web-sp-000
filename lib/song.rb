@@ -8,7 +8,9 @@ class Song
     self.artist=artist if artist
     self.genre=genre if genre
 
+    if self.artist
     self.artist.add_song(self)
+    end
   end
 
   def self.all
