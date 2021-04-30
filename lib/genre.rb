@@ -28,9 +28,8 @@ class Genre
     genre
   end
 
-  def songs=(songs)
-    songs.genre << self
-    @songs = songs
+  def songs
+    @songs
   end
 
   def artists
