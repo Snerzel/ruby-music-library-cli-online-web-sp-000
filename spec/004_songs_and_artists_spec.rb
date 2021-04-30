@@ -10,7 +10,7 @@ describe "Associations — Song and Artist:" do
       it "returns the artist's 'songs' collection (artist has many songs)" do
         expect(artist.songs).to eq([])
 
-        song.instance_variable_set(:@artist, artist)
+        song.artist = artist
         
         expect(artist.songs).to include(song)
       end
