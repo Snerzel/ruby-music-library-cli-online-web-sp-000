@@ -10,7 +10,7 @@ class Song
 
     if artist != nil
       self.artist = artist
-      artist.addsong(self)
+      artist.add_song(self)
     end
   end
 
