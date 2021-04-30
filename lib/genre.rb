@@ -33,6 +33,14 @@ class Genre
   end
 
   def artists
-    @songs.collect {|s| s.artist}.uniq
+    @new_array = []
+    @songs.each do |song|
+      if @new_array.include?(song.artist)
+        nil
+      else
+        @new_array << song.artist
+      end
+    end
+    @new_array
   end
 end
