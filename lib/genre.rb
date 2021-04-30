@@ -36,4 +36,3 @@ class Genre
     self.songs.collect {|s| s.artist}.uniq
   end
 end
-
